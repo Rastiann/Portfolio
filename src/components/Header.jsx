@@ -5,10 +5,10 @@ export function Header() {
         <header>
             <Section className="flex items-baseline justify-between">
                 <div>
-
+                    {/* Le logo hexagone */}
                 </div>
                 <div>
-
+                    {/* La Toolbar */}
                 </div>
             </Section>
         </header>
