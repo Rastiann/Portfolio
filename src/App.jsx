@@ -1,13 +1,11 @@
-import { useState } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return <div>
-      <p>
-          Hello World
-      </p>
-  </div>
+    return (
+        <h1 className="font-sans text-3xl font-bold">
+            Mon Portfolio
+        </h1>
+    )
 }
 
 export default App
