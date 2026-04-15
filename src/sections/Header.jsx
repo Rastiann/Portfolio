@@ -3,28 +3,10 @@ import Naviguation from "../components/Naviguation"
 import { motion, AnimatePresence } from 'framer-motion'
 
 
-export default function Header() {
+export default function Header({links}) {
     const [isOpen, toggle] = useToggle(false) // utiliser le open pour faire une animation
 
-    // Les Liens vers les différentes sections
-    const links = [
-        {
-            name: "Acceuil",
-            href: "sdf"
-        },
-        {
-            name: "About me",
-            href: "sdf"
-        },
-        {
-            name: "Projets",
-            href: "sdf"
-        },
-        {
-            name: "Me contacter",
-            href: "sdf"
-        }
-    ]
+
 
     return (
         <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary-foreground/40">
