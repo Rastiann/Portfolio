@@ -83,11 +83,7 @@ body {
 
 
 
-
-
-
-/* Magie Noire Du carousel (vrm dégueu) */
-
+/* ===== MARQUEE ===== */
 @keyframes marquee {
     from {
         transform: translateX(0);
@@ -98,28 +94,20 @@ body {
     }
 }
 
-@keyframes marquee-vertical {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(calc(-100% - var(--gap)));
-    }
-}
-
+/* base */
 .animate-marquee {
-    animation: marquee var(--duration) linear infinite;
+    animation: marquee var(--duration, 20s) linear infinite;
+    display: flex;
+    width: max-content;
+    will-change: transform;
 }
 
-.animate-marquee-vertical {
-    animation: marquee-vertical var(--duration) linear infinite;
+/* reverse (SIMPLE ET PROPRE) */
+.animate-marquee.reverse {
+    animation-direction: reverse;
 }
 
+/* pause hover */
 .group:hover .animate-marquee {
-    animation-play-state: paused;
-}
-
-.group:hover .animate-marquee-vertical {
     animation-play-state: paused;
 }
