@@ -43,6 +43,7 @@
     --chart-3: oklch(0.40 0.10 145.0);
     --chart-4: oklch(0.62 0.018 240.8);
     --chart-5: oklch(0.85 0.014 240.3);
+
 }
 
 /* rajouter un dark theme */
@@ -77,5 +78,48 @@ body {
 }
 
 .c-space {
-  @apply sm:px-10 px-5 lg:px-15;
+    @apply sm:px-10 px-5 lg:px-15;
+}
+
+
+
+
+
+
+/* Magie Noire Du carousel (vrm dégueu) */
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+@keyframes marquee-vertical {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(calc(-100% - var(--gap)));
+    }
+}
+
+.animate-marquee {
+    animation: marquee var(--duration) linear infinite;
+}
+
+.animate-marquee-vertical {
+    animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.group:hover .animate-marquee {
+    animation-play-state: paused;
+}
+
+.group:hover .animate-marquee-vertical {
+    animation-play-state: paused;
 }

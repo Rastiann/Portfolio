@@ -3,7 +3,7 @@ import Naviguation from "../components/Naviguation"
 import { motion, AnimatePresence } from 'framer-motion'
 
 
-export default function Header({links}) {
+export default function Header({ links }) {
     const [isOpen, toggle] = useToggle(false) // utiliser le open pour faire une animation
 
 
@@ -13,15 +13,17 @@ export default function Header({links}) {
             <div className="mx-auto px-5 max-w-7xl">
                 <div className="flex items-center justify-between py-2 sm:py-0">
                     <a href="#" className="text-xl font-bold transition-colors text-neutral-400 hover:text-white">
-                        Bastian
+                        Bastian (mettre des chevrons autour)
                     </a>
                     <button onClick={toggle} className="flex cursor-pointer sm:hidden">
-                        <img src="src\assets\menu.svg" alt="burger-menu" className="w-6 h-6" />
+                        <img src="src\assets\header\menu.svg" alt="burger-menu" className="w-6 h-6" />
                     </button>
                     <nav className="hidden sm:flex items-center gap-2">
-                        <Naviguation links={links} />
+                        <ul className="z-20 flex flex-row gap-6 items-center">
+                            <Naviguation links={links} />
+                        </ul>
                         <button onClick={toggle} className="flex cursor-pointer">
-                            <img src="src\assets\sun.svg" alt="burger-menu" className="w-6 h-6" />
+                            <img src="src\assets\header\sun.svg" alt="sun" className="w-6 h-6" />
                         </button>
                     </nav>
                 </div>
@@ -35,7 +37,9 @@ export default function Header({links}) {
                     transition={{ duration: 0.7 }}
                 >
                     <nav className="pb-5">
-                        <Naviguation links={links} />
+                        <ul className="z-20 flex gap-4 flex-col items-center">
+                            <Naviguation links={links} />
+                        </ul>
                     </nav>
                 </motion.div>)}
             </AnimatePresence>

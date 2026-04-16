@@ -15,7 +15,7 @@ export default function HeroText() {
             </div>
 
             {/* Mobile View */}
-            <div className="flex flex-col md:hidden c-space gap-2">
+            <div className="flex flex-col items-center md:hidden c-space gap-2">
                 <p className="text-neutral-100 font-medium text-3xl">Hi I'm Rastian</p>
                 <p className="text-neutral-400 font-medium text-4xl">Building</p>
                     <FlipWords words={words} />
