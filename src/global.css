@@ -81,8 +81,14 @@ body {
     @apply sm:px-10 px-5 lg:px-15;
 }
 
+section {
+    margin-bottom: 6rem;
+}
 
 
+
+
+/* NE PAS TOUCHER */
 /* ===== MARQUEE ===== */
 @keyframes marquee {
     from {
@@ -100,11 +106,6 @@ body {
     display: flex;
     width: max-content;
     will-change: transform;
-}
-
-/* reverse (SIMPLE ET PROPRE) */
-.animate-marquee.reverse {
-    animation-direction: reverse;
 }
 
 /* pause hover */

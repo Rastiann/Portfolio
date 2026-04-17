@@ -1,4 +1,5 @@
 import Marquee from "../components/Marquee"
+import StackCard from "../components/StackCard"
 
 const languages = [
     {
@@ -139,63 +140,9 @@ const tools = [
     }
 ]
 
-const ReviewCard = ({ img, name, role, level, tags = [] }) => {
-    return (
-        <figure
-            className="relative w-44 rounded-xl flex-shrink-0 p-4 flex flex-col justify-between overflow-hidden bg-gray-950 hover:bg-gray-900 transition-all duration-200 hover:scale-[1.04] hover:shadow-2xl"
-            style={{ aspectRatio: "2/3" }}
-        >
-            {/* GLOW */}
-            <div className="absolute inset-0 opacity-20 blur-2xl">
-                <img src={img} className="w-full h-full object-contain scale-150" />
-            </div>
-
-            {/* LEVEL */}
-            <div className="relative z-10 text-right text-[10px] text-white/50">
-                {level}%
-            </div>
-
-            {/* LOGO */}
-            <div className="relative z-10 flex items-center justify-center flex-1">
-                <img
-                    src={img}
-                    alt={name}
-                    className="h-20 object-contain drop-shadow-lg"
-                />
-            </div>
-
-            {/* CONTENT */}
-            <div className="relative z-10">
-                <figcaption className="text-white text-sm font-semibold">
-                    {name}
-                </figcaption>
-
-                <p className="text-green-400 text-[10px] font-medium mb-2 uppercase tracking-wider">
-                    {role}
-                </p>
-
-                <div className="flex flex-wrap gap-1 mb-2">
-                    {tags.slice(0, 3).map((tag) => (
-                        <span
-                            key={tag}
-                            className="text-[9px] text-white/60 bg-white/5 px-1.5 py-0.5 rounded"
-                        >
-                            {tag}
-                        </span>
-                    ))}
-                </div>
-
-                <div className="text-gray-400 text-[11px] italic">
-                    Mastery: {level}%
-                </div>
-            </div>
-        </figure>
-    )
-}
-
 export default function Stack() {
     return (
-        <section className="flex flex-col gap-10 c-space text-center md:text-start">
+        <section className="flex flex-col gap-10 c-space text-center md:text-start mb-20">
             <h1 className="font-extrabold text-8xl">Stack</h1>
 
             <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
@@ -203,14 +150,14 @@ export default function Stack() {
                 <p className="font-medium text-neutral-300 text-5xl">Languages</p>
                 <Marquee pauseOnHover className="[--duration:20s]">
                     {languages.map((item) => (
-                        <ReviewCard key={item.name} {...item} />
+                        <StackCard key={item.name} {...item} />
                     ))}
                 </Marquee>
 
                 <p className="font-medium text-neutral-300 text-5xl">Tools</p>
                 <Marquee pauseOnHover className="[--duration:20s]">
                     {tools.map((item) => (
-                        <ReviewCard key={item.name} {...item} />
+                        <StackCard key={item.name} {...item} />
                     ))}
                 </Marquee>
 

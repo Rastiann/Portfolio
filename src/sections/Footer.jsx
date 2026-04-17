@@ -6,7 +6,7 @@ import Naviguation from "../components/Naviguation"
 export default function Footer({ links }) {
 
     return (
-        <section className="c-space">
+        <div className="c-space">
             <div className="flex flex-col items-center justify-between border-t border-border/80 py-5 md:flex-row gap-5">
                 <ul className="z-20 flex gap-4 flex-row md:gap-6 items-center">
                     {links.map(link => (
@@ -56,7 +56,7 @@ export default function Footer({ links }) {
 
 
             </div>
-        </section>
+        </div>
 
     )
 }
