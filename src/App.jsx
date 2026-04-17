@@ -3,6 +3,7 @@ import Hero from "./sections/Hero.jsx"
 import Footer from "./sections/Footer.jsx"
 import Stack from "./sections/Stack.jsx"
 import Projects from "./sections/Projects.jsx"
+import Contact from "./sections/Contact.jsx"
 
 // Les Liens vers les différentes sections
 const links = [
@@ -32,6 +33,7 @@ function App() {
         {/* About me */}
         <Projects />
         <Stack />
+        <Contact />
         {/* <section className="min-h-screen"></section> */}
         <Footer links={links} />
     </div>

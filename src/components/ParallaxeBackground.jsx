@@ -3,7 +3,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion"
 export default function ParallaxeBackground() {
 
     const { scrollYProgress } = useScroll()
-    const x = useSpring(scrollYProgress, {damping: 50})
+    const x = useSpring(scrollYProgress, { damping: 50 })
 
     const layer1Y = useTransform(x, [0, 0.7], ["0%", "70%"])
     const layer2Y = useTransform(x, [0, 0.7], ["0%", "30%"])
