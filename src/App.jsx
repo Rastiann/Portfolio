@@ -32,7 +32,7 @@ function App() {
         {/* About me */}
         <Projects />
         <Stack />
-        <section className="min-h-screen"></section>
+        {/* <section className="min-h-screen"></section> */}
         <Footer links={links} />
     </div>
 

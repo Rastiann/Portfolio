@@ -1,10 +1,27 @@
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ProjectsGrid({ projects }) {
+
+
     const [selected, setSelected] = useState(null)
     const [lastSelected, setLastSelected] = useState(null)
+
+    // Permet de bloquer le scroll en arrière plan quand un projet est sélectionné
+    useEffect(() => {
+
+        if (selected) {
+            document.body.style.overflow = "hidden"
+        } else {
+            document.body.style.overflow = "auto"
+        }
+
+        return () => {
+            document.body.style.overflow = "auto"
+        }
+
+    }, [selected])
 
     const handleClick = (project) => {
         setLastSelected(selected)
@@ -27,7 +44,7 @@ export default function ProjectsGrid({ projects }) {
                         className={twMerge(
                             project.className,
                             selected?.id == project.id
-                                ? "fixed w-screen top-0 left-0 z-50 min-h-screesn overflow-y-scroll"
+                                ? "fixed w-screen top-0 left-0 z-50 h-screen"
                                 : lastSelected?.id == project.id
                                     ? "relative overflow-hidden z-2 rounded-xl h-full w-full hover:cursor-pointer"
                                     : "relative overflow-hidden  rounded-xl h-full w-full hover:cursor-pointer shadow-2xl"
@@ -51,9 +68,8 @@ export default function ProjectsGrid({ projects }) {
 
 const SelectedProject = ({ project, handleCrossClick }) => {
 
-    return <div className="flex items-center relative w-full h-full bg-amber-50">
-        <button className="absolute right-4 top-7" onClick={(e) => {
-            console.log("appuyer")
+    return <div className="flex items-center relative w-full h-full overflow-scroll bg-primary-foreground">
+        <button className="fixed right-4 top-7" onClick={(e) => {
             e.stopPropagation()
             handleCrossClick()
         }}>

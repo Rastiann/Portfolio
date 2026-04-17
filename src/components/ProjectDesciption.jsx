@@ -1,54 +1,61 @@
-import { twMerge } from "tailwind-merge";
+import { twMerge } from "tailwind-merge"
 
-export default function ProjectDescription({ className }) {
+export default function ProjectDescription({
+    className,
+    content
+}) {
     return (
-        <div className={twMerge("max-w-7xl mx-auto px-8 py-12", className)}>
-            <h1 className="text-4xl font-bold mb-4">Portfolio</h1>
-            <p className="text-lg text-gray-600 mb-10">
-                Un portfolio personnel pour présenter mes projets et compétences,
-                développé avec React et Tailwind CSS.
-            </p>
+        <div className={twMerge(" mx-auto px-6 py-12 flex flex-col gap-8", className)}>
 
-            <section className="mb-8">
-                <h2 className="text-xl font-semibold mb-2">Mon rôle</h2>
-                <p className="text-gray-600">
-                    Développeur fullstack, j'ai conçu et développé l'intégralité du projet
-                    de la maquette jusqu'au déploiement.
-                </p>
-            </section>
+            {/* HEADER */}
+            <div className="flex flex-col gap-2">
+                <h1 className="text-4xl font-bold">{content.title}</h1>
+                <p className="text-lg text-gray-500">{content.subtitle}</p>
+            </div>
 
-            <section className="mb-8">
-                <h2 className="text-xl font-semibold mb-2">Défis techniques</h2>
-                <p className="text-gray-600">
-                    Mettre en place des animations fluides avec Framer Motion tout en
-                    gardant de bonnes performances.
-                </p>
-            </section>
+            {/* DESCRIPTION */}
+            <div className="text-base leading-relaxed">
+                {content.description}
+            </div>
 
-            <section className="mb-8">
-                <h2 className="text-xl font-semibold mb-2">Technologies utilisées</h2>
-                <p className="text-gray-600">React, TypeScript, Tailwind CSS, Framer Motion</p>
-            </section>
+            {/* TECHNO */}
+            <div className="flex flex-wrap gap-2">
+                {content.technologie?.map((tech, i) => (
+                    <span
+                        key={i}
+                        className="px-3 py-1 bg-black/10 rounded-full text-sm"
+                    >
+                        {tech}
+                    </span>
+                ))}
+            </div>
 
-            <section className="mb-8">
-                <h2 className="text-xl font-semibold mb-2">Technologies utilisées</h2>
-                <p className="text-gray-600">React, TypeScript, Tailwind CSS, Framer Motion</p>
-            </section>
+            {/* KEY POINTS */}
+            <div className="flex flex-col gap-6">
+                {content.keyPoints?.map((point, i) => (
+                    <div key={i} className="flex flex-col gap-2">
+                        <h3 className="text-xl font-semibold">
+                            {point.title}
+                        </h3>
+                        <p className="text-gray-600">
+                            {point.description}
+                        </p>
 
-            <section className="mb-8">
-                <h2 className="text-xl font-semibold mb-2">Technologies utilisées</h2>
-                <p className="text-gray-600">React, TypeScript, Tailwind CSS, Framer Motion</p>
-            </section>
+                        {point.code && (
+                            <div className="bg-black text-white p-4 rounded-lg text-sm">
+                                {/* exemple code */}
+                                <code>
+                                    {`app.use('/api', createProxyMiddleware({
+                                    target: 'http://microservice',
+                                    changeOrigin: true
+                                    }))`}
+                                </code>
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </div>
 
-            <section className="mb-8">
-                <h2 className="text-xl font-semibold mb-2">Technologies utilisées</h2>
-                <p className="text-gray-600">React, TypeScript, Tailwind CSS, Framer Motion</p>
-            </section>
-
-            <section className="mb-8">
-                <h2 className="text-xl font-semibold mb-2">Technologies utilisées</h2>
-                <p className="text-gray-600">React, TypeScript, Tailwind CSS, Framer Motion</p>
-            </section>
         </div>
     )
 }
