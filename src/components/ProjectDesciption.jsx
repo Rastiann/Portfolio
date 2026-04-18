@@ -10,7 +10,7 @@ export default function ProjectDescription({
             {/* HEADER */}
             <div className="flex flex-col gap-2">
                 <h1 className="text-4xl font-bold">{content.title}</h1>
-                <p className="text-lg text-gray-500">{content.subtitle}</p>
+                <p className="text-lg text-muted">{content.subtitle}</p>
             </div>
 
             {/* DESCRIPTION */}
@@ -23,7 +23,7 @@ export default function ProjectDescription({
                 {content.technologie?.map((tech, i) => (
                     <span
                         key={i}
-                        className="px-3 py-1 bg-black/10 rounded-full text-sm"
+                        className="px-3 py-1 bg-surface-soft rounded-full text-sm"
                     >
                         {tech}
                     </span>
@@ -37,12 +37,12 @@ export default function ProjectDescription({
                         <h3 className="text-xl font-semibold">
                             {point.title}
                         </h3>
-                        <p className="text-gray-600">
+                        <p className="text-muted">
                             {point.description}
                         </p>
 
                         {point.code && (
-                            <div className="bg-black text-white p-4 rounded-lg text-sm">
+                            <div className="bg-surface-strong text-foreground p-4 rounded-lg text-sm">
                                 {/* exemple code */}
                                 <code>
                                     {`app.use('/api', createProxyMiddleware({

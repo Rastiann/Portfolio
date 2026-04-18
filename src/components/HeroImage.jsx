@@ -12,7 +12,7 @@ export default function HeroImage() {
             }}
             transition={{ duration: 0.05 }}
         >
-            <img src="src/assets/gecko.png" alt="Bastian" className="w-full h-full object-cover" />
+            <img src="src/assets/bastian.jpg" alt="Bastian" className="w-full h-full object-cover" />
         </motion.button>
     )
 }

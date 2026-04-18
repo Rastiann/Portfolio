@@ -96,7 +96,7 @@ const projects = [
 
 export default function Projects() {
 
-    return <section className="w-full c-space h-auto flex flex-col gap-10 text-center md:text-start">
+    return <section id="projects" className="w-full c-space h-auto flex flex-col gap-10 text-center md:text-start">
         <h1 className="font-extrabold text-8xl">Projects</h1>
         <ProjectsGrid projects={projects} />
     </section>

@@ -11,19 +11,23 @@ import About from "./sections/About.jsx"
 const links = [
     {
         name: "Acceuil",
-        href: "sdf"
+        href: "#hero"
     },
     {
-        name: "About me",
-        href: "sdf"
+        name: "À propos",
+        href: "#about"
+    },
+    {
+        name: "Compétences",
+        href: "#stack"
     },
     {
         name: "Projets",
-        href: "sdf"
+        href: "#projects"
     },
     {
-        name: "Me contacter",
-        href: "sdf"
+        name: "Contact",
+        href: "#contact"
     }
 ]
 
@@ -33,8 +37,8 @@ function App() {
         <Header links={links} />
         <Hero />
         <About />
-        <Projects />
         <Stack />
+        <Projects />
         <Contact />
         {/* <section className="min-h-screen"></section> */}
         <Footer links={links} />

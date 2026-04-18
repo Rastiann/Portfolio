@@ -9,11 +9,11 @@ export default function Header({ links }) {
 
 
     return (
-        <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary-foreground/40">
+        <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-surface/40 shadow-md ">
             <div className="mx-auto px-5 max-w-7xl">
                 <div className="flex items-center justify-between py-2 sm:py-0">
-                    <a href="#" className="text-xl font-bold transition-colors text-neutral-400 hover:text-white">
-                        Bastian (mettre des chevrons autour)
+                    <a href="#" className="transition-colors text-muted-foreground hover:text-foreground text-xl font-bold">
+                        Bastian
                     </a>
                     <button onClick={toggle} className="flex cursor-pointer sm:hidden">
                         <img src="src\assets\header\menu.svg" alt="burger-menu" className="w-6 h-6" />

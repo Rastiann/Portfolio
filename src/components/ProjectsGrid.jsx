@@ -90,7 +90,7 @@ const ProjectCard = ({ project }) => {
                 className="absolute inset-0 w-full h-full object-cover"
             />
             {/* OVERLAY AU HOVER */}
-            <div className="absolute inset-0 bg-black/0 hover:bg-black/40 transition-all duration-300 z-10" />
+            <div className="absolute inset-0 bg-transparent hover:bg-overlay transition-all duration-300 z-10" />
             {/* CONTENU */}
 
             {/* Image de fond */}

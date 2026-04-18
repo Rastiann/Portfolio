@@ -3,7 +3,7 @@
 export default function ReviewCard({ img, name, role, level, tags = [] }) {
     return (
         <figure
-            className="relative w-44 rounded-xl shrink p-4 flex flex-col justify-between overflow-hidden bg-gray-950 hover:bg-gray-900 transition-all duration-200 hover:scale-[1.04] hover:shadow-2xl"
+            className="relative w-44 rounded-xl shrink p-4 flex flex-col justify-between overflow-hidden bg-surface-strong hover:bg-surface transition-all duration-200 hover:scale-[1.04] hover:shadow-2xl"
             style={{ aspectRatio: "2/3" }}
         >
             {/* GLOW */}
@@ -12,7 +12,7 @@ export default function ReviewCard({ img, name, role, level, tags = [] }) {
             </div>
 
             {/* LEVEL */}
-            <div className="relative z-10 text-right text-[10px] text-white/50">
+            <div className="relative z-10 text-right text-[10px] text-muted">
                 {level}%
             </div>
 
@@ -27,11 +27,11 @@ export default function ReviewCard({ img, name, role, level, tags = [] }) {
 
             {/* CONTENT */}
             <div className="relative z-10">
-                <figcaption className="text-white text-sm font-semibold">
+                <figcaption className="text-foreground text-sm font-semibold">
                     {name}
                 </figcaption>
 
-                <p className="text-green-400 text-[10px] font-medium mb-2 uppercase tracking-wider">
+                <p className="text-foreground text-[10px] font-medium mb-2 uppercase tracking-wider">
                     {role}
                 </p>
 
@@ -39,14 +39,14 @@ export default function ReviewCard({ img, name, role, level, tags = [] }) {
                     {tags.slice(0, 3).map((tag) => (
                         <span
                             key={tag}
-                            className="text-[9px] text-white/60 bg-white/5 px-1.5 py-0.5 rounded"
+                            className="text-[9px] text-foreground/60 bg-surface-soft px-1.5 py-0.5 rounded"
                         >
                             {tag}
                         </span>
                     ))}
                 </div>
 
-                <div className="text-gray-400 text-[11px] italic">
+                <div className="text-foreground text-[11px] italic">
                     Mastery: {level}%
                 </div>
             </div>

@@ -21,7 +21,7 @@ export default function Footer({ links }) {
                         {/* CV */}
                         <a
                             href="src/assets/footer/cv.pdf"
-                            className="p-1 border-2 border-border/90 rounded-sm hover:bg-white/20"
+                            className="p-1 border-2 border-border/90 rounded-sm hover:bg-overlay-soft"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -31,7 +31,7 @@ export default function Footer({ links }) {
                         {/* Github */}
                         <a
                             href="https://github.com/Rastiann"
-                            className="p-1 border-2 border-border/90 hover:bg-white/20 rounded-sm"
+                            className="p-1 border-2 border-border/90 hover:bg-overlay-soft rounded-sm"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -41,7 +41,7 @@ export default function Footer({ links }) {
                         {/* Mail */}
                         <a
                             href="mailto:bastian.cochard@gmail.com"
-                            className="p-1 border-2 border-border/90 hover:bg-white/20 rounded-sm"
+                            className="p-1 border-2 border-border/90 hover:bg-overlay-soft rounded-sm"
                         >
                             <MailIcon size="30px" />
                         </a>

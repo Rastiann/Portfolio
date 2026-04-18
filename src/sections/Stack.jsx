@@ -142,19 +142,19 @@ const tools = [
 
 export default function Stack() {
     return (
-        <section className="flex flex-col gap-10 c-space text-center md:text-start mb-20">
+        <section id="stack" className="flex flex-col gap-10 c-space text-center md:text-start mb-20">
             <h1 className="font-extrabold text-8xl">Stack</h1>
 
             <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
 
-                <p className="font-medium text-neutral-300 text-5xl">Languages</p>
+                <p className="font-medium text-foreground text-5xl">Languages</p>
                 <Marquee pauseOnHover className="[--duration:20s]">
                     {languages.map((item) => (
                         <StackCard key={item.name} {...item} />
                     ))}
                 </Marquee>
 
-                <p className="font-medium text-neutral-300 text-5xl">Tools</p>
+                <p className="font-medium text-foreground text-5xl">Tools</p>
                 <Marquee pauseOnHover className="[--duration:20s]">
                     {tools.map((item) => (
                         <StackCard key={item.name} {...item} />

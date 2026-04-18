@@ -50,22 +50,22 @@ export default function Contact() {
     }
 
 
-    return <section className="c-space relative flex items-center justify-center">
+    return <section id="contact" className="c-space relative flex items-center justify-center">
 
         {/* Le background avec les points */}
         <div className="absolute inset-0 -z-1"
             style={{
-                maskImage: "radial-gradient(ellipse at center, black 40%, transparent 80%)",
-                WebkitMaskImage: "radial-gradient(ellipse at center, black 40%, transparent 80%)"
+                maskImage: "radial-gradient(ellipse at center, var(--mask) 40%, transparent 80%)",
+                WebkitMaskImage: "radial-gradient(ellipse at center, var(--mask) 40%, transparent 80%)"
             }}>
             <DotPattern />
         </div>
 
-        <div className="flex flex-col items-center justify-center max-w-md p-5 border border-white/10 rounded-2xl bg-secondary py-10">
+        <div className="flex flex-col items-center justify-center max-w-md p-5 border border-border/10 rounded-2xl bg-card py-10">
             {/* le gap prends pas jsp pourquoi ici ? */}
             <div className="flex flex-col items-start w-full g-5 mb-10">
-                <h2 className="font-bold text-3xl md:text-4xl">Let's Talk</h2>
-                <p className="font-normal text-neutral-400">Salut bande de salope vous etes tous des putes
+                <h2 className="font-bold text-3xl md:text-4xl text-foreground">Let's Talk</h2>
+                <p className="font-normal text-muted-foreground">Salut bande de salope vous etes tous des putes
                     Salut bande de salope vous etes tous des putes
                     Salut bande de salope vous etes tous des putes
                     Salut bande de salope vous etes tous des putes
@@ -91,7 +91,7 @@ export default function Contact() {
                 <motion.button
                     type="submit"
                     disabled={isLoading}
-                    className="overflow-hidden w-full bg-radial from-violet-400 to-purple-700 rounded-sm p-2 relative disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="overflow-hidden w-full bg-radial rounded-sm p-2 relative disabled:opacity-70 disabled:cursor-not-allowed"
                     whileTap={!isLoading ? { scale: 0.97 } : {}}
                 >
                     {isLoading ? "Sending..." : "Send"}
