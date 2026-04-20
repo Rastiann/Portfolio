@@ -6,9 +6,9 @@ const projects = [
         id: 1,
         className: "md:col-span-2",
         thumbnail: "src/assets/projects/dicefull.png",
-        technologies: ["javascript", "kotlin", "node.js"],
-        title: "FishFull",
-        date: "2025-2026",
+        technologies: ["Php", "Html", "Css", "Javascript", "CodeIgniter 4", "DockerFile"],
+        title: "DiceFull",
+        date: "2025",
         content: <ProjectDescription content={{
             subtitle: "Une API REST de protection de la vie marine",
             description: (
@@ -66,9 +66,9 @@ const projects = [
         id: 2,
         className: "md:col-span-1",
         thumbnail: "src/assets/projects/api.png",
-        technologies: ["javascript", "kotlin", "node.js"],
+        technologies: ["Node.js", "Swagger", "Express"],
         title: "FishFull",
-        date: "2025-2026",
+        date: "2026",
         content: <ProjectDescription content={{
             subtitle: "Une API REST de protection de la vie marine",
             description: (
@@ -126,9 +126,9 @@ const projects = [
         id: 3,
         className: "md:col-span-1",
         thumbnail: "src/assets/projects/moviefull.png",
-        technologies: ["javascript", "kotlin", "node.js"],
-        title: "FishFull",
-        date: "2025-2026",
+        technologies: ["Kotlin", "Android", "Android Studio"],
+        title: "MovieFull",
+        date: "2026",
         content: <ProjectDescription content={{
             subtitle: "Une API REST de protection de la vie marine",
             description: (
@@ -186,9 +186,9 @@ const projects = [
         id: 4,
         className: "md:col-span-2",
         thumbnail: "src/assets/projects/lol.png",
-        technologies: ["javascript", "kotlin", "node.js"],
-        title: "FishFull",
-        date: "2025-2026",
+        technologies: ["html", "css"],
+        title: "League of Legends Skin",
+        date: "2024",
         content: <ProjectDescription content={{
             subtitle: "Une API REST de protection de la vie marine",
             description: (
@@ -246,9 +246,9 @@ const projects = [
         id: 5,
         className: "md:col-span-3",
         thumbnail: "src/assets/projects/graphe.png",
-        technologies: ["javascript", "kotlin", "node.js"],
-        title: "FishFull",
-        date: "2025-2026",
+        technologies: ["python"],
+        title: "Graphe Analyse",
+        date: "2024",
         content: <ProjectDescription content={{
             subtitle: "Une API REST de protection de la vie marine",
             description: (
@@ -306,9 +306,9 @@ const projects = [
         id: 6,
         className: "md:col-span-1",
         thumbnail: "src/assets/projects/qui-est-ce.png",
-        technologies: ["javascript", "kotlin", "node.js"],
-        title: "FishFull",
-        date: "2025-2026",
+        technologies: ["Kotlin"],
+        title: "Qui est-ce ?",
+        date: "2025",
         content: <ProjectDescription content={{
             subtitle: "Une API REST de protection de la vie marine",
             description: (
@@ -366,7 +366,7 @@ const projects = [
         id: 6,
         className: "md:col-span-1",
         thumbnail: "src/assets/projects/txt2automate.png",
-        technologies: ["javascript", "kotlin", "node.js"],
+        technologies: ["kotlin"],
         title: "Txt2Automate",
         date: "2025-2026",
         content: <ProjectDescription content={{
@@ -426,9 +426,9 @@ const projects = [
         id: 6,
         className: "md:col-span-1",
         thumbnail: "src/assets/projects/qui-est-ce.png",
-        technologies: ["javascript", "kotlin", "node.js"],
+        technologies: ["Golang"],
         title: "Quadtree",
-        date: "2025-2026",
+        date: "2024",
         content: <ProjectDescription content={{
             subtitle: "Une API REST de protection de la vie marine",
             description: (
@@ -454,7 +454,7 @@ const projects = [
                             >
                                 http-proxy-middleware
                             </a>{" "}
-                            avec Express pour gérer le routage et simplifier l'accès côté client.   
+                            avec Express pour gérer le routage et simplifier l'accès côté client.
                         </>
                     ),
                     code: true
