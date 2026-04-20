@@ -12,7 +12,7 @@ export default function Header({ links }) {
         <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-surface/40 shadow-md ">
             <div className="mx-auto px-5 max-w-7xl">
                 <div className="flex items-center justify-between py-2 sm:py-0">
-                    <a href="#" className="transition-colors text-muted-foreground hover:text-foreground text-xl font-bold">
+                    <a href="#" className="transition-colors text-muted-foreground hover:text-violet-300 text-xl font-bold">
                         Bastian
                     </a>
                     <button onClick={toggle} className="flex cursor-pointer sm:hidden">
@@ -22,9 +22,6 @@ export default function Header({ links }) {
                         <ul className="z-20 flex flex-row gap-6 items-center">
                             <Naviguation links={links} />
                         </ul>
-                        <button onClick={toggle} className="flex cursor-pointer">
-                            <img src="src\assets\header\sun.svg" alt="sun" className="w-6 h-6" />
-                        </button>
                     </nav>
                 </div>
             </div>

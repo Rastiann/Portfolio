@@ -11,7 +11,7 @@ export default function Footer({ links }) {
                 <ul className="z-20 flex gap-4 flex-row md:gap-6 items-center">
                     {links.map(link => (
                         <li className="py-1" key={link.name}>
-                            <a className="transition-colors text-muted-foreground hover:text-foreground font-medium" href={link.href}>{link.name}</a>
+                            <a className="transition-colors text-muted-foreground hover:text-violet-300 font-medium" href={link.href}>{link.name}</a>
                         </li>
                     ))}
                 </ul>
@@ -47,7 +47,7 @@ export default function Footer({ links }) {
                         </a>
                     </ul>
                     <div className="flex flex-col text-center md:text-start">
-                        <p>Bastian COCHARD</p>
+                        <p className="text-muted-foreground transition-colors hover:text-violet-300">Bastian COCHARD</p>
                         <p>© 2026 Rastiann.</p>
                     </div>
                 </div>

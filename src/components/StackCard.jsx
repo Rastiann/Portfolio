@@ -3,7 +3,7 @@
 export default function ReviewCard({ img, name, role, level, tags = [] }) {
     return (
         <figure
-            className="relative w-44 rounded-xl shrink p-4 flex flex-col justify-between overflow-hidden bg-surface-strong hover:bg-surface transition-all duration-200 hover:scale-[1.04] hover:shadow-2xl"
+            className="relative w-44 rounded-xl shrink p-4 flex flex-col justify-between overflow-hidden bg-surface-strong hover:bg-surface transition-all duration-200 hover:scale-[1.04]"
             style={{ aspectRatio: "2/3" }}
         >
             {/* GLOW */}

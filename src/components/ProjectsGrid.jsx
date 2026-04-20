@@ -1,6 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { div } from "framer-motion/client";
 
 export default function ProjectsGrid({ projects }) {
 
@@ -34,7 +35,7 @@ export default function ProjectsGrid({ projects }) {
     }
 
     return (
-        <div className="h-auto grid grid-cols-1 gap-4 max-w-7xl mx-auto md:grid-cols-3 relative">
+        <div className="w-full h-auto grid grid-cols-1 gap-4 max-w-7xl mx-auto md:grid-cols-3 relative">
             {projects.map(project => (
 
                 // Empeche les erreurs si className est pas définis mais ça sert à rien jcrois ?
@@ -82,21 +83,30 @@ const SelectedProject = ({ project, handleCrossClick }) => {
 
 const ProjectCard = ({ project }) => {
     return (
-        <div className="relative h-50 w-full overflow-hidden rounded-xl">
-            {/* IMAGE DE FOND */}
+        <div className="relative h-55 w-full min-w-0 overflow-hidden rounded-xl flex items-end justify-center md:justify-start p-3 transition-all duration-300 hover:pb-6 group">
+
             <img
                 src={project.thumbnail}
                 alt={project.title}
                 className="absolute inset-0 w-full h-full object-cover"
             />
-            {/* OVERLAY AU HOVER */}
-            <div className="absolute inset-0 bg-transparent hover:bg-overlay transition-all duration-300 z-10" />
-            {/* CONTENU */}
 
-            {/* Image de fond */}
-            <h1>Titre du projet</h1>
-            <p>[python, javascript, kotlin]</p>
-            <p>petite description, petite description, petite description, petite description, petite description</p>
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 z-10" />
+
+            <div className="relative z-20 text-white min-w-0">
+                <h1 className="text-lg font-semibold">{project.title}</h1>
+                <p className="text-sm opacity-80">{project.date}</p>
+
+                <div className="flex flex-wrap gap-2 mt-2 min-w-0">
+                    {project.technologies.map(techno => (
+                        <div key={techno} className="bg-white/90 text-black text-xs px-2 py-1 rounded">
+                            {techno}
+                        </div>
+                    ))}
+
+                </div>
+            </div>
+
         </div>
     )
 }

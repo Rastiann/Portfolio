@@ -65,12 +65,7 @@ export default function Contact() {
             {/* le gap prends pas jsp pourquoi ici ? */}
             <div className="flex flex-col items-start w-full g-5 mb-10">
                 <h2 className="font-bold text-3xl md:text-4xl text-foreground">Let's Talk</h2>
-                <p className="font-normal text-muted-foreground">Salut bande de salope vous etes tous des putes
-                    Salut bande de salope vous etes tous des putes
-                    Salut bande de salope vous etes tous des putes
-                    Salut bande de salope vous etes tous des putes
-                    Salut bande de salope vous etes tous des putes
-                </p>
+                <p className="font-normal text-muted-foreground">Vous pouvez m’envoyer un message pour discuter d’un projet, d’un stage ou d’une collaboration.</p>
             </div>
             <form className="w-full" onSubmit={handleSubmit}>
                 <div className="mb-5">
