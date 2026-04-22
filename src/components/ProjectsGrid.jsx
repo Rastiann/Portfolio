@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { div } from "framer-motion/client";
+import ProjectDescription from "./ProjectDescription";
 
 export default function ProjectsGrid({ projects }) {
 
@@ -68,19 +68,26 @@ export default function ProjectsGrid({ projects }) {
 }
 
 const SelectedProject = ({ project, handleCrossClick }) => {
-
-    return <div className="flex items-center relative w-full h-full overflow-scroll bg-primary-foreground">
-        <button className="fixed right-4 top-7" onClick={(e) => {
-            e.stopPropagation()
-            handleCrossClick()
-        }}>
-            <img src="src/assets/projects/cross.svg" alt="Cross" />
-        </button>
-        {project.content}
-    </div>
-
-}
-
+    return (
+        <div
+            className="relative w-full h-full overflow-y-scroll text-white"
+            style={{ background: "oklch(0.285 0.036 275.174)" }}>
+            {/* CROIX */}
+            <button
+                className="fixed right-4 top-7 w-10 h-10 rounded-full z-100
+                           bg-white border border-zinc-600
+                           flex items-center justify-center transition hover:cursor-pointer"
+                onClick={(e) => { e.stopPropagation(); handleCrossClick(); }}
+            >
+                <img src="src/assets/projects/cross.svg" alt="Cross" className="w-4 h-4" />
+            </button>
+            {/* CONTENT */}
+            <div className="flex justify-center px-4 py-16">
+                <ProjectDescription project={project} />
+            </div>
+        </div>
+    );
+};
 const ProjectCard = ({ project }) => {
     return (
         <div className="relative h-55 w-full min-w-0 overflow-hidden rounded-xl flex items-end justify-center md:justify-start p-3 transition-all duration-300 hover:pb-6 group">
