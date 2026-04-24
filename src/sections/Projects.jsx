@@ -7,7 +7,7 @@ export const projects = [
         title: "DiceFull",
         date: "2025",
         className: "md:col-span-2",
-        thumbnail: "/Portfolio/assets/projects/dicefull.png",
+        thumbnail: "assets/projects/dicefull.png",
         technologies: ["PHP", "CodeIgniter 4", "Docker", "JavaScript", "HTML", "CSS"],
 
         subtitle: "Plateforme e-commerce de jeux de société",
@@ -106,7 +106,7 @@ Objectif :
         title: "FishFull",
         date: "2025",
         className: "md:col-span-1",
-        thumbnail: "/Portfolio/assets/projects/api.png",
+        thumbnail: "assets/projects/api.png",
         technologies: ["Node.js", "Express", "Microservices", "Docker", "API REST", "Testing"],
         subtitle: "API REST de protection du monde aquatique",
 
@@ -197,7 +197,7 @@ Flux :
     {
         id: 3,
         className: "md:col-span-1",
-        thumbnail: "/Portfolio/assets/projects/moviefull.png",
+        thumbnail: "assets/projects/moviefull.png",
         technologies: ["Kotlin", "Android", "Android Studio"],
         title: "MovieFull",
         date: "2026",
@@ -262,7 +262,7 @@ startActivity(intent)`
     {
         id: 4,
         className: "md:col-span-2",
-        thumbnail: "/Portfolio/assets/projects/lol.png",
+        thumbnail: "assets/projects/lol.png",
         technologies: ["HTML", "CSS"],
         title: "League of Legends Skin",
         date: "2024",
@@ -283,7 +283,7 @@ Il s’agit d’un projet centré sur les bases du développement front-end (HTM
     {
         id: 5,
         className: "md:col-span-2",
-        thumbnail: "/Portfolio/assets/projects/graphe.png",
+        thumbnail: "assets/projects/graphe.png",
         technologies: ["Python"],
         title: "Graphe Analyse",
         date: "2024",
@@ -303,7 +303,7 @@ Le projet inclut également une approche d’analyse de réseaux, notamment pour
     {
         id: 6,
         className: "md:col-span-1",
-        thumbnail: "/Portfolio/assets/projects/qui-est-ce.png",
+        thumbnail: "assets/projects/qui-est-ce.png",
         technologies: ["Kotlin", "JavaFX"],
         title: "Qui est-ce ?",
         date: "2025",
@@ -386,7 +386,7 @@ fun testRequeteInvalide(idPartie: Int, idJoueur: Int) {
     {
         id: 7,
         className: "md:col-span-1",
-        thumbnail: "/Portfolio/assets/projects/txt2automate.png",
+        thumbnail: "assets/projects/txt2automate.png",
         technologies: ["Kotlin"],
         title: "Txt2Automate",
         date: "2025-2026",
@@ -463,7 +463,7 @@ Le projet fonctionne sur Linux et Windows et met en avant la manipulation de str
     {
         id: 8,
         className: "md:col-span-1",
-        thumbnail: "/Portfolio/assets/projects/quadtree.png",
+        thumbnail: "assets/projects/quadtree.png",
         technologies: ["Go"],
         title: "Quadtree",
         date: "2024",
@@ -527,7 +527,7 @@ func makeNode(array [][]int, x, y, w, h int) *node {
     {
         id: 9,
         className: "md:col-span-1",
-        thumbnail: "/Portfolio/assets/projects/tcp.png",
+        thumbnail: "assets/projects/tcp.png",
         technologies: ["Go", "TCP"],
         title: "Serveur TCP de transfert de fichiers",
         date: "2024",
