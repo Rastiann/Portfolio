@@ -52,7 +52,7 @@ const About = () => {
 
                 {/* placeholder droite */}
                 <div className="flex-1 flex items-center justify-center text-muted border border-dashed border-border/50 rounded-xl min-h-64">
-                    placeholder
+                    <img src="src/assets/about_image.png" className="rounded-2xl"/>
                 </div>
             </div>
 

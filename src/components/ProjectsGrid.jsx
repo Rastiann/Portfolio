@@ -98,9 +98,9 @@ const ProjectCard = ({ project }) => {
                 className="absolute inset-0 w-full h-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 z-10" />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300" />
 
-            <div className="relative z-20 text-white min-w-0">
+            <div className="relative text-white min-w-0">
                 <h1 className="text-lg font-semibold">{project.title}</h1>
                 <p className="text-sm opacity-80">{project.date}</p>
 

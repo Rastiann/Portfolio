@@ -86,7 +86,7 @@ export default function Contact() {
                 <motion.button
                     type="submit"
                     disabled={isLoading}
-                    className="overflow-hidden w-full bg-radial rounded-sm p-2 relative disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="overflow-hidden w-full bg-violet-500/10 hover:cursor-pointer   rounded-sm p-2 relative disabled:opacity-70 disabled:cursor-not-allowed"
                     whileTap={!isLoading ? { scale: 0.97 } : {}}
                 >
                     {isLoading ? "Sending..." : "Send"}
