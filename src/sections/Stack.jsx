@@ -56,7 +56,7 @@ const languages = [
         role: "NoSQL Database",
         level: 30,
         tags: ["NoSQL", "JSON", "Scalable"],
-        img: "assets/logos/mongodb.png",
+        img: "assets/logos/mongoDb.png",
     },
     {
         name: "SQL",
