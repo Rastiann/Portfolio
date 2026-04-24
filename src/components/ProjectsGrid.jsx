@@ -79,7 +79,7 @@ const SelectedProject = ({ project, handleCrossClick }) => {
                            flex items-center justify-center transition hover:cursor-pointer"
                 onClick={(e) => { e.stopPropagation(); handleCrossClick(); }}
             >
-                <img src="src/assets/projects/cross.svg" alt="Cross" className="w-4 h-4" />
+                <img src="public/assets/projects/cross.svg" alt="Cross" className="w-4 h-4" />
             </button>
             {/* CONTENT */}
             <div className="flex justify-center px-4 py-16">

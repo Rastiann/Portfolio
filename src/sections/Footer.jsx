@@ -1,6 +1,6 @@
-import CvIcon from "../assets/footer/CvIcon"
-import GithubIcon from "../assets/footer/GithubIcon"
-import MailIcon from "../assets/footer/MailIcon"
+import CvIcon from "../../public/assets/footer/CvIcon"
+import GithubIcon from "../../public/assets/footer/GithubIcon"
+import MailIcon from "../../public/assets/footer/MailIcon"
 import Naviguation from "../components/Naviguation"
 
 export default function Footer({ links }) {
@@ -20,7 +20,7 @@ export default function Footer({ links }) {
                     <ul className="flex gap-2 items-center">
                         {/* CV */}
                         <a
-                            href="src/assets/footer/cv.pdf"
+                            href="public/assets/footer/cv.pdf"
                             className="p-1 border-2 border-border/90 rounded-sm hover:bg-overlay-soft"
                             target="_blank"
                             rel="noopener noreferrer"

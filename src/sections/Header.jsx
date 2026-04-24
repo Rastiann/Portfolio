@@ -16,7 +16,7 @@ export default function Header({ links }) {
                         Bastian
                     </a>
                     <button onClick={toggle} className="flex cursor-pointer sm:hidden">
-                        <img src="src\assets\header\menu.svg" alt="burger-menu" className="w-6 h-6" />
+                        <img src="public/assets/header/menu.svg" alt="burger-menu" className="w-6 h-6" />
                     </button>
                     <nav className="hidden sm:flex items-center gap-2">
                         <ul className="z-20 flex flex-row gap-6 items-center">
