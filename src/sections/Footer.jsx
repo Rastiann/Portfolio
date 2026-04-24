@@ -20,7 +20,7 @@ export default function Footer({ links }) {
                     <ul className="flex gap-2 items-center">
                         {/* CV */}
                         <a
-                            href="public/assets/footer/cv.pdf"
+                            href="/Portfolio/assets/footer/cv.pdf"
                             className="p-1 border-2 border-border/90 rounded-sm hover:bg-overlay-soft"
                             target="_blank"
                             rel="noopener noreferrer"

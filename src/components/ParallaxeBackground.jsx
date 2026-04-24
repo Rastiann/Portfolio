@@ -16,7 +16,7 @@ export default function ParallaxeBackground() {
                 {/* Layer 3 */}
                 <motion.div className="absolute inset-0 w-full h-screen -z-50"
                     style={{
-                        backgroundImage: "url(public/assets/parallaxe/layer3.png)",
+                        backgroundImage: "url(/Portfolio/assets/parallaxe/layer3.png)",
                         backgroundPosition: "bottom",
                         backgroundSize: "cover",
                         y: layer3Y
@@ -25,7 +25,7 @@ export default function ParallaxeBackground() {
                 {/* Layer 2 */}
                 <motion.div className="absolute inset-0 w-full h-screen -z-40"
                     style={{
-                        backgroundImage: "url(public/assets/parallaxe/layer2.png)",
+                        backgroundImage: "url(/Portfolio/assets/parallaxe/layer2.png)",
                         backgroundPosition: "bottom",
                         backgroundSize: "cover",
                         x: layer2Y
@@ -34,7 +34,7 @@ export default function ParallaxeBackground() {
                 {/* Layer 1 */}
                 <motion.div className="absolute inset-0 w-full h-screen -z-30"
                     style={{
-                        backgroundImage: "url(public/assets/parallaxe/layer1.png)",
+                        backgroundImage: "url(/Portfolio/assets/parallaxe/layer1.png)",
                         backgroundPosition: "bottom",
                         backgroundSize: "cover",
                         y: layer1Y
