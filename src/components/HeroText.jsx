@@ -19,7 +19,7 @@ export default function HeroText() {
                 <p className="text-foreground font-medium text-3xl">Salut je suis Bastian</p>
                 <p className="text-muted font-medium text-4xl">motivé par la création</p>
                 <FlipWords words={words} />
-                <p className="font-semibold text-5xl">de solution technologiques</p>
+                <p className="font-semibold text-4xl md:text-5xl">de solution technologiques</p>
             </div>
         </div>
     )

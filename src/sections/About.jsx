@@ -6,7 +6,7 @@ const About = () => {
 
             <div className="flex flex-col md:flex-row gap-10">
                 <div className="w-full md:max-w-2xl  md:border-r-2 border-b-2 md:border-b-0 border-accent/70 pr-8 pb-8">
-                    <h1 className="font-extrabold text-8xl text-foreground tracking-tight mb-2">
+                    <h1 className="font-extrabold text-7xl md:text-8xl text-foreground tracking-tight mb-2">
                         Bastian<br />Cochard
                     </h1>
                     <p className="text-muted-foreground text-sm tracking-widest mb-8">

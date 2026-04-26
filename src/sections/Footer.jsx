@@ -8,7 +8,7 @@ export default function Footer({ links }) {
     return (
         <div className="c-space">
             <div className="flex flex-col items-center justify-between border-t border-border/80 py-5 md:flex-row gap-5">
-                <ul className="z-20 flex gap-4 flex-row md:gap-6 items-center">
+                <ul className="z-20 flex gap-4 flex-row md:gap-6 items-center flex-wrap justify-center">
                     {links.map(link => (
                         <li className="py-1" key={link.name}>
                             <a className="transition-colors text-muted-foreground hover:text-violet-300 font-medium" href={link.href}>{link.name}</a>
